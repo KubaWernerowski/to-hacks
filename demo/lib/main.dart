@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:async';
 import 'dart:io';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 
 void main() {
   runApp(MaterialApp(
@@ -206,6 +208,7 @@ class Malaria extends StatefulWidget {
 }
 
 class _MalariaState extends State<Malaria> {
+  final String flaskEndPoint = 'https://763aec28.ngrok.io/image';
   File _image;
 
   Future getImage() async {
@@ -213,6 +216,22 @@ class _MalariaState extends State<Malaria> {
 
     setState(() {
       _image = image;
+      _uploadIamge();
+    });
+  }
+
+  void _uploadIamge() async {
+    if (_image == null) return;
+    String base64Image = base64Encode(_image.readAsBytesSync());
+    String fileName = _image.path.split('/').last;
+
+    http.post(flaskEndPoint, body: {
+      "image": base64Image,
+      "name": fileName,
+    }).then((res) {
+      print(res.statusCode);
+    }).catchError((err) {
+      print(err);
     });
   }
 
@@ -231,14 +250,6 @@ class _MalariaState extends State<Malaria> {
         child: Icon(Icons.add_a_photo),
       ),
     );
-    // raisedButton: RaisedButton(
-    //       onPressed: () {
-    //         // Navigate back to HomeScreen
-    //         Navigator.pop(context);
-    //       },
-    //       child: Text('Back to Tests'),
-    //     ),
-    // );
   }
 }
 
