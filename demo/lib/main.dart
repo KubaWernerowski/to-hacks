@@ -218,7 +218,7 @@ class Malaria extends StatefulWidget {
 }
 
 class _MalariaState extends State<Malaria> {
-  final String flaskEndPoint = 'https://763aec28.ngrok.io/image';
+  final String flaskEndPoint = 'http://52.233.29.248:80/predict';
   File _image;
 
   Future getImage() async {
@@ -254,9 +254,7 @@ class _MalariaState extends State<Malaria> {
       body: Center(
         child: Column(
           children: <Widget>[
-
-            Container
-              (
+            Container(
               alignment: Alignment.centerLeft,
               padding: EdgeInsets.only(left: 30, right: 30),
               child: Text(
@@ -269,9 +267,7 @@ class _MalariaState extends State<Malaria> {
                 ),
               ),
             ),
-
-            Container
-              (
+            Container(
               alignment: Alignment.centerLeft,
               padding: EdgeInsets.only(left: 30, right: 30),
               child: Text(
@@ -280,15 +276,15 @@ class _MalariaState extends State<Malaria> {
                   fontSize: 16,
                   height: 1.2,
                   letterSpacing: 2,
-
                 ),
               ),
-        ),
+            ),
             Container(
               margin: const EdgeInsets.fromLTRB(30, 10, 30, 10),
-              width:350,
+              width: 350,
               height: 200,
-              child: _image == null ? Text('Select an Image') : Image.file(_image),
+              child:
+                  _image == null ? Text('Select an Image') : Image.file(_image),
             ),
           ],
         ),
