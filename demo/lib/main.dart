@@ -286,6 +286,8 @@ class _MalariaState extends State<Malaria> {
         ),
             Container(
               margin: const EdgeInsets.fromLTRB(30, 10, 30, 10),
+              width:350,
+              height: 200,
               child: _image == null ? Text('Select an Image') : Image.file(_image),
             ),
           ],
