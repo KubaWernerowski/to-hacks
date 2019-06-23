@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
                 alignment: Alignment.topCenter,
               child:
                 Image.asset(
-                'images/aceso-logo.png',
+                'images/aceso-logo-2.png',
                 ),
               ),
 
