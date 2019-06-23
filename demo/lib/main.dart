@@ -97,7 +97,7 @@ class Tests extends StatelessWidget {
                   margin: EdgeInsets.only(bottom: 25.0),
                   child: Text(
                     'SELECT YOUR TEST',
-                    style: TextStyle(fontSize: 30, letterSpacing: 5),
+                    style: TextStyle(fontSize: 25, letterSpacing: 5),
                   ),
                 ),
                 Container(
@@ -262,7 +262,7 @@ class _MalariaState extends State<Malaria> {
               child: Text(
                 '\nMALARIA TESTING',
                 style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 25,
                   letterSpacing: 4,
                   color: Colors.blue[900],
                   fontWeight: FontWeight.w600,
@@ -275,7 +275,7 @@ class _MalariaState extends State<Malaria> {
               alignment: Alignment.centerLeft,
               padding: EdgeInsets.only(left: 30, right: 30),
               child: Text(
-                '\nSYMPTOMS MAY INCLUDE:\n\n • SHAKING CHILLS\n • HIGH FEVER\n • PROFUSE SWEATING\n\nUPLOAD AN IMAGE OF A BLOOD CELL:',
+                '\nSYMPTOMS MAY INCLUDE:\n\n • SHAKING CHILLS\n • HIGH FEVER\n • PROFUSE SWEATING\n\nUPLOAD AN IMAGE OF A CELL:',
                 style: TextStyle(
                   fontSize: 16,
                   height: 1.2,
