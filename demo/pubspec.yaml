@@ -43,6 +43,7 @@ flutter:
         - images/aceso-logo.png
         - images/aceso-logo-2.png
         - images/aceso-logo-single.png
+        - images/aceso-logo-transparent.png
     #  - images/a_dot_ham.jpeg
     # An image asset can refer to one or more resolution-specific "variants", see
     # https://flutter.dev/assets-and-images/#resolution-aware.
