@@ -72,143 +72,142 @@ class Tests extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:
-          Container(
-            alignment: Alignment.bottomCenter,
-            decoration: BoxDecoration(
-
-              image: DecorationImage(image: AssetImage("images/aceso-logo-transparent.png"), fit: BoxFit.none,),
-            ),
-            child:
-            Align(
-                alignment: Alignment.center,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: <Widget>[
-                    Container(
-                      margin: EdgeInsets.only(bottom: 40),
-                      child: Image.asset(
-                        'images/aceso-logo-single.png',
-                        width: 350,
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(bottom: 25.0),
-                      child: Text(
-                        'SELECT YOUR TEST',
-                        style: TextStyle(fontSize: 30, letterSpacing: 5),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(top: 20.0),
-                      child: RaisedButton(
-                        onPressed: () {
-                          // Navigate to Malaria Upload Image
-                          Navigator.pushNamed(context, '/malaria');
-                        },
-                        textColor: Colors.white,
-                        color: Colors.blue[700],
-                        shape: StadiumBorder(),
-                        padding: const EdgeInsets.fromLTRB(40, 20, 40, 20),
-                        child: new Text(
-                          "MALARIA",
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            letterSpacing: 3,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(top: 20.0),
-                      child: RaisedButton(
-                        onPressed: () {
-                          // Navigate to Malaria Upload Image
-                          Navigator.pushNamed(context, '/malaria');
-                        },
-                        textColor: Colors.white,
-                        color: Colors.blue[700],
-                        shape: StadiumBorder(),
-                        padding: const EdgeInsets.fromLTRB(40, 20, 40, 20),
-                        child: new Text(
-                          "PARKINSONS",
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            letterSpacing: 3,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(top: 20.0),
-                      child: RaisedButton(
-                        onPressed: () {
-                          // Navigate to Malaria Upload Image
-                          Navigator.pushNamed(context, '/malaria');
-                        },
-                        textColor: Colors.white,
-                        color: Colors.blue[700],
-                        shape: StadiumBorder(),
-                        padding: const EdgeInsets.fromLTRB(40, 20, 40, 20),
-                        child: new Text(
-                          "SKIN CANCER",
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            letterSpacing: 3,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(top: 20.0),
-                      child: RaisedButton(
-                        onPressed: () {
-                          // Navigate to Malaria Upload Image
-                          Navigator.pushNamed(context, '/malaria');
-                        },
-                        textColor: Colors.white,
-                        color: Colors.blue[700],
-                        shape: StadiumBorder(),
-                        padding: const EdgeInsets.fromLTRB(40, 20, 40, 20),
-                        child: new Text(
-                          "HUNTINGTONS",
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            letterSpacing: 3,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(top: 20.0, bottom: 40.0),
-                      child: RaisedButton(
-                        onPressed: () {
-                          // Navigate to Malaria Upload Image
-                          Navigator.pushNamed(context, '/malaria');
-                        },
-                        textColor: Colors.white,
-                        color: Colors.blue[700],
-                        shape: StadiumBorder(),
-                        padding: const EdgeInsets.fromLTRB(40, 20, 40, 20),
-                        child: new Text(
-                          "ALZHEIMERS",
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            letterSpacing: 3,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                )),
+      body: Container(
+        alignment: Alignment.bottomCenter,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("images/aceso-logo-transparent.png"),
+            fit: BoxFit.none,
           ),
-
+        ),
+        child: Align(
+            alignment: Alignment.center,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                Container(
+                  margin: EdgeInsets.only(bottom: 40),
+                  child: Image.asset(
+                    'images/aceso-logo-single.png',
+                    width: 350,
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(bottom: 25.0),
+                  child: Text(
+                    'SELECT YOUR TEST',
+                    style: TextStyle(fontSize: 30, letterSpacing: 5),
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(top: 20.0),
+                  child: RaisedButton(
+                    onPressed: () {
+                      // Navigate to Malaria Upload Image
+                      Navigator.pushNamed(context, '/malaria');
+                    },
+                    textColor: Colors.white,
+                    color: Colors.blue[700],
+                    shape: StadiumBorder(),
+                    padding: const EdgeInsets.fromLTRB(40, 20, 40, 20),
+                    child: new Text(
+                      "MALARIA",
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        letterSpacing: 3,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(top: 20.0),
+                  child: RaisedButton(
+                    onPressed: () {
+                      // Navigate to Malaria Upload Image
+                      Navigator.pushNamed(context, '/malaria');
+                    },
+                    textColor: Colors.white,
+                    color: Colors.blue[700],
+                    shape: StadiumBorder(),
+                    padding: const EdgeInsets.fromLTRB(40, 20, 40, 20),
+                    child: new Text(
+                      "PARKINSONS",
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        letterSpacing: 3,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(top: 20.0),
+                  child: RaisedButton(
+                    onPressed: () {
+                      // Navigate to Malaria Upload Image
+                      Navigator.pushNamed(context, '/malaria');
+                    },
+                    textColor: Colors.white,
+                    color: Colors.blue[700],
+                    shape: StadiumBorder(),
+                    padding: const EdgeInsets.fromLTRB(40, 20, 40, 20),
+                    child: new Text(
+                      "SKIN CANCER",
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        letterSpacing: 3,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(top: 20.0),
+                  child: RaisedButton(
+                    onPressed: () {
+                      // Navigate to Malaria Upload Image
+                      Navigator.pushNamed(context, '/malaria');
+                    },
+                    textColor: Colors.white,
+                    color: Colors.blue[700],
+                    shape: StadiumBorder(),
+                    padding: const EdgeInsets.fromLTRB(40, 20, 40, 20),
+                    child: new Text(
+                      "HUNTINGTONS",
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        letterSpacing: 3,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+                  child: RaisedButton(
+                    onPressed: () {
+                      // Navigate to Malaria Upload Image
+                      Navigator.pushNamed(context, '/malaria');
+                    },
+                    textColor: Colors.white,
+                    color: Colors.blue[700],
+                    shape: StadiumBorder(),
+                    padding: const EdgeInsets.fromLTRB(40, 20, 40, 20),
+                    child: new Text(
+                      "ALZHEIMERS",
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        letterSpacing: 3,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )),
+      ),
     );
   }
 }
@@ -253,7 +252,10 @@ class _MalariaState extends State<Malaria> {
         title: Text('Malaria Tests'),
       ),
       body: Center(
-        child: _image == null ? Text('Select an Image') : Image.file(_image),
+        child: Container(
+          margin: const EdgeInsets.fromLTRB(30, 30, 30, 30),
+          child: _image == null ? Text('Select an Image') : Image.file(_image),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: getImage,
