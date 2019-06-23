@@ -235,22 +235,22 @@ class _MalariaState extends State<Malaria> {
       ),
       body: Center(
         child: _image == null ? Text('Select an Image') : Image.file(_image),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: getImage,
-        tooltip: 'Pick Image',
-        child: Icon(Icons.add_a_photo),
-      ),
-    );
-    // raisedButton: RaisedButton(
-    //       onPressed: () {
-    //         // Navigate back to HomeScreen
-    //         Navigator.pop(context);
-    //       },
-    //       child: Text('Back to Tests'),
-    //     ),
-    // );
-  }
+  ),
+floatingActionButton: FloatingActionButton(
+onPressed: getImage,
+tooltip: 'Pick Image',
+child: Icon(Icons.add_a_photo),
+),
+);
+// raisedButton: RaisedButton(
+//       onPressed: () {
+//         // Navigate back to HomeScreen
+//         Navigator.pop(context);
+//       },
+//       child: Text('Back to Tests'),
+//     ),
+// );
+}
 }
 
 class SlideRightRoute extends PageRouteBuilder {
