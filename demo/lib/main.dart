@@ -275,7 +275,7 @@ class _MalariaState extends State<Malaria> {
               alignment: Alignment.centerLeft,
               padding: EdgeInsets.only(left: 30, right: 30),
               child: Text(
-                '\nSYMPTOMS MAY INCLUDE:\n\n • SHAKING CHILLS\n • HIGH FEVER\n • PROFUSE SWEATING\n • HEADACHES\n • NAUSEA\n • VOMITTING\n\nUPLOAD AN IMAGE OF A BLOOD CELL:',
+                '\nSYMPTOMS MAY INCLUDE:\n\n • SHAKING CHILLS\n • HIGH FEVER\n • PROFUSE SWEATING\n\nUPLOAD AN IMAGE OF A BLOOD CELL:',
                 style: TextStyle(
                   fontSize: 16,
                   height: 1.2,
@@ -285,7 +285,7 @@ class _MalariaState extends State<Malaria> {
               ),
         ),
             Container(
-              margin: const EdgeInsets.fromLTRB(30, 30, 30, 30),
+              margin: const EdgeInsets.fromLTRB(30, 10, 30, 10),
               child: _image == null ? Text('Select an Image') : Image.file(_image),
             ),
           ],
